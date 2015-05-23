@@ -14,6 +14,17 @@
 		16423CA51B0E4AD90040B7D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16423CA41B0E4AD90040B7D9 /* Images.xcassets */; };
 		16423CA81B0E4AD90040B7D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16423CA61B0E4AD90040B7D9 /* LaunchScreen.xib */; };
 		16423CB41B0E4AD90040B7D9 /* twilioHelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16423CB31B0E4AD90040B7D9 /* twilioHelloWorldTests.m */; };
+		16423ECE1B10043E0040B7D9 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16423ECD1B10043E0040B7D9 /* libc++.dylib */; };
+		16423ED01B1004480040B7D9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16423ECF1B1004480040B7D9 /* libz.dylib */; };
+		16423ED21B10044F0040B7D9 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16423ED11B10044F0040B7D9 /* libxml2.dylib */; };
+		16423ED41B1004570040B7D9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 16423ED31B1004570040B7D9 /* libsqlite3.dylib */; };
+		16423ED61B1004610040B7D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16423ED51B1004610040B7D9 /* CoreLocation.framework */; };
+		16423EDA1B1004710040B7D9 /* WhirlyGlobeMaplyComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16423ED91B1004710040B7D9 /* WhirlyGlobeMaplyComponent.framework */; };
+		16423EDC1B1005060040B7D9 /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 16423EDB1B1005060040B7D9 /* pic.png */; };
+		16423EDF1B1005340040B7D9 /* userObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 16423EDE1B1005340040B7D9 /* userObject.m */; };
+		16423EE21B1005530040B7D9 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 16423EE01B1005530040B7D9 /* check.png */; };
+		16423EE31B1005530040B7D9 /* xmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 16423EE11B1005530040B7D9 /* xmark.png */; };
+		16423EE51B1005610040B7D9 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 16423EE41B1005610040B7D9 /* pin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +51,18 @@
 		16423CAD1B0E4AD90040B7D9 /* twilioHelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twilioHelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16423CB21B0E4AD90040B7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16423CB31B0E4AD90040B7D9 /* twilioHelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twilioHelloWorldTests.m; sourceTree = "<group>"; };
+		16423ECD1B10043E0040B7D9 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		16423ECF1B1004480040B7D9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		16423ED11B10044F0040B7D9 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		16423ED31B1004570040B7D9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		16423ED51B1004610040B7D9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		16423ED91B1004710040B7D9 /* WhirlyGlobeMaplyComponent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WhirlyGlobeMaplyComponent.framework; path = WhirlyGlobe_Maply_Distribution_2_3/WhirlyGlobeMaplyComponent.framework; sourceTree = "<group>"; };
+		16423EDB1B1005060040B7D9 /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
+		16423EDD1B1005340040B7D9 /* userObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = userObject.h; path = twilioHelloWorld/userObject.h; sourceTree = "<group>"; };
+		16423EDE1B1005340040B7D9 /* userObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = userObject.m; path = twilioHelloWorld/userObject.m; sourceTree = "<group>"; };
+		16423EE01B1005530040B7D9 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		16423EE11B1005530040B7D9 /* xmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmark.png; sourceTree = "<group>"; };
+		16423EE41B1005610040B7D9 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16423EDA1B1004710040B7D9 /* WhirlyGlobeMaplyComponent.framework in Frameworks */,
+				16423ED61B1004610040B7D9 /* CoreLocation.framework in Frameworks */,
+				16423ED41B1004570040B7D9 /* libsqlite3.dylib in Frameworks */,
+				16423ED21B10044F0040B7D9 /* libxml2.dylib in Frameworks */,
+				16423ED01B1004480040B7D9 /* libz.dylib in Frameworks */,
+				16423ECE1B10043E0040B7D9 /* libc++.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,18 @@
 		16423C8B1B0E4AD90040B7D9 = {
 			isa = PBXGroup;
 			children = (
+				16423EE41B1005610040B7D9 /* pin.png */,
+				16423EE01B1005530040B7D9 /* check.png */,
+				16423EE11B1005530040B7D9 /* xmark.png */,
+				16423EDD1B1005340040B7D9 /* userObject.h */,
+				16423EDE1B1005340040B7D9 /* userObject.m */,
+				16423EDB1B1005060040B7D9 /* pic.png */,
+				16423ED91B1004710040B7D9 /* WhirlyGlobeMaplyComponent.framework */,
+				16423ED51B1004610040B7D9 /* CoreLocation.framework */,
+				16423ED31B1004570040B7D9 /* libsqlite3.dylib */,
+				16423ED11B10044F0040B7D9 /* libxml2.dylib */,
+				16423ECF1B1004480040B7D9 /* libz.dylib */,
+				16423ECD1B10043E0040B7D9 /* libc++.dylib */,
 				16423C961B0E4AD90040B7D9 /* twilioHelloWorld */,
 				16423CB01B0E4AD90040B7D9 /* twilioHelloWorldTests */,
 				16423C951B0E4AD90040B7D9 /* Products */,
@@ -201,8 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				16423CA31B0E4AD90040B7D9 /* Main.storyboard in Resources */,
+				16423EE21B1005530040B7D9 /* check.png in Resources */,
 				16423CA81B0E4AD90040B7D9 /* LaunchScreen.xib in Resources */,
+				16423EE51B1005610040B7D9 /* pin.png in Resources */,
+				16423EDC1B1005060040B7D9 /* pic.png in Resources */,
 				16423CA51B0E4AD90040B7D9 /* Images.xcassets in Resources */,
+				16423EE31B1005530040B7D9 /* xmark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16423CA01B0E4AD90040B7D9 /* ViewController.m in Sources */,
+				16423EDF1B1005340040B7D9 /* userObject.m in Sources */,
 				16423C9D1B0E4AD90040B7D9 /* AppDelegate.m in Sources */,
 				16423C9A1B0E4AD90040B7D9 /* main.m in Sources */,
 			);
@@ -352,8 +398,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhirlyGlobe_Maply_Distribution_2_3",
+				);
 				INFOPLIST_FILE = twilioHelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -365,8 +419,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhirlyGlobe_Maply_Distribution_2_3",
+				);
 				INFOPLIST_FILE = twilioHelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -425,6 +487,7 @@
 				16423CB91B0E4AD90040B7D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16423CBA1B0E4AD90040B7D9 /* Build configuration list for PBXNativeTarget "twilioHelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +496,7 @@
 				16423CBC1B0E4AD90040B7D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
