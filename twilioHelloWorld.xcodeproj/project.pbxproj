@@ -31,7 +31,6 @@
 		16423EF41B10DB4E0040B7D9 /* login_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16423EEE1B10DB4E0040B7D9 /* login_background.jpg */; };
 		16423EF51B10DB4E0040B7D9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 16423EEF1B10DB4E0040B7D9 /* logo.png */; };
 		16423EF61B10DB4E0040B7D9 /* stumped_login_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 16423EF01B10DB4E0040B7D9 /* stumped_login_pressed.png */; };
-		16423EF71B10DB4E0040B7D9 /* stumped_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 16423EF11B10DB4E0040B7D9 /* stumped_login.png */; };
 		16423EF91B10DC9C0040B7D9 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16423EF81B10DC9C0040B7D9 /* ParseFacebookUtilsV4.framework */; };
 		16423EFC1B10DCDC0040B7D9 /* UIColor+colorFromHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 16423EFB1B10DCDC0040B7D9 /* UIColor+colorFromHexString.m */; };
 		16423EFF1B10DD780040B7D9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16423EFE1B10DD780040B7D9 /* AudioToolbox.framework */; };
@@ -43,6 +42,7 @@
 		16423F0B1B10DDAC0040B7D9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16423F0A1B10DDAC0040B7D9 /* StoreKit.framework */; };
 		16423F0D1B10DDB40040B7D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16423F0C1B10DDB40040B7D9 /* SystemConfiguration.framework */; };
 		16423F0F1B10E2D70040B7D9 /* twilio_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 16423F0E1B10E2D70040B7D9 /* twilio_logo.png */; };
+		16423F111B10E8480040B7D9 /* stumped_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 16423F101B10E8480040B7D9 /* stumped_login.png */; };
 		5D50AE676FD9AF459062EB35 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA56963D0AD8FAD88F35309C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +90,6 @@
 		16423EEE1B10DB4E0040B7D9 /* login_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login_background.jpg; sourceTree = "<group>"; };
 		16423EEF1B10DB4E0040B7D9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		16423EF01B10DB4E0040B7D9 /* stumped_login_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stumped_login_pressed.png; sourceTree = "<group>"; };
-		16423EF11B10DB4E0040B7D9 /* stumped_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stumped_login.png; sourceTree = "<group>"; };
 		16423EF81B10DC9C0040B7D9 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		16423EFA1B10DCDC0040B7D9 /* UIColor+colorFromHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+colorFromHexString.h"; sourceTree = "<group>"; };
 		16423EFB1B10DCDC0040B7D9 /* UIColor+colorFromHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+colorFromHexString.m"; sourceTree = "<group>"; };
@@ -103,6 +102,7 @@
 		16423F0A1B10DDAC0040B7D9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		16423F0C1B10DDB40040B7D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		16423F0E1B10E2D70040B7D9 /* twilio_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twilio_logo.png; sourceTree = "<group>"; };
+		16423F101B10E8480040B7D9 /* stumped_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stumped_login.png; sourceTree = "<group>"; };
 		DA9206E8C4F595899B5D6E17 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EA56963D0AD8FAD88F35309C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -210,13 +210,13 @@
 		16423EE61B10D9240040B7D9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				16423F101B10E8480040B7D9 /* stumped_login.png */,
 				16423F0E1B10E2D70040B7D9 /* twilio_logo.png */,
 				16423EEC1B10DB4E0040B7D9 /* facebook_login_pressed.png */,
 				16423EED1B10DB4E0040B7D9 /* facebook_login.png */,
 				16423EEE1B10DB4E0040B7D9 /* login_background.jpg */,
 				16423EEF1B10DB4E0040B7D9 /* logo.png */,
 				16423EF01B10DB4E0040B7D9 /* stumped_login_pressed.png */,
-				16423EF11B10DB4E0040B7D9 /* stumped_login.png */,
 				16423EE41B1005610040B7D9 /* pin.png */,
 				16423EE01B1005530040B7D9 /* check.png */,
 				16423EE11B1005530040B7D9 /* xmark.png */,
@@ -366,12 +366,12 @@
 				16423CA81B0E4AD90040B7D9 /* LaunchScreen.xib in Resources */,
 				16423EE51B1005610040B7D9 /* pin.png in Resources */,
 				16423EF41B10DB4E0040B7D9 /* login_background.jpg in Resources */,
+				16423F111B10E8480040B7D9 /* stumped_login.png in Resources */,
 				16423EF61B10DB4E0040B7D9 /* stumped_login_pressed.png in Resources */,
 				16423EF21B10DB4E0040B7D9 /* facebook_login_pressed.png in Resources */,
 				16423EDC1B1005060040B7D9 /* pic.png in Resources */,
 				16423CA51B0E4AD90040B7D9 /* Images.xcassets in Resources */,
 				16423EE31B1005530040B7D9 /* xmark.png in Resources */,
-				16423EF71B10DB4E0040B7D9 /* stumped_login.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

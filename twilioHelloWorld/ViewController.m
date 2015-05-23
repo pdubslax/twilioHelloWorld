@@ -11,6 +11,7 @@
 #import "userObject.h"
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #import "LoginViewController.h"
+#import "UIColor+colorFromHexString.h"
 
 @interface ViewController ()
 - (void) addCountries;
@@ -39,8 +40,6 @@
         //TODO signed in YES eventually, we wont need this here
         NSLog([currentUser objectForKey:@"displayName"]);
         LoginViewController *vc = [LoginViewController new];
-        [self presentViewController:vc animated:NO completion:^{
-        }];
     } else {
         // show the signup or login screen
         LoginViewController *vc = [LoginViewController new];
@@ -56,17 +55,17 @@
     
     
     // Do any additional setup after loading the view, typically from a nib.
-    [self.view setBackgroundColor:[UIColor grayColor]];
+    [self.view setBackgroundColor:[UIColor colorFromHexString:@"3498db"]];
     theViewC = [[WhirlyGlobeViewController alloc] init];
     [self.view addSubview:theViewC.view];
     theViewC.view.frame = CGRectMake(0, 0, self.view.frame.size.width, 600);
     [self addChildViewController:theViewC];
     
     quoteLabel = [UILabel new];
-    [quoteLabel setText:@"Spin the Globe"];
+    [quoteLabel setText:@"Twilio Globetrotter"];
     [quoteLabel setFrame:CGRectMake(0, 30, self.view.frame.size.width, 100)];
     [quoteLabel setTextAlignment:NSTextAlignmentCenter];
-    [quoteLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:30]];
+    [quoteLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:40]];
     [quoteLabel setMinimumScaleFactor:.2f];
     quoteLabel.adjustsFontSizeToFitWidth = YES;
     [quoteLabel setTextColor:[UIColor whiteColor]];
@@ -139,7 +138,7 @@
         mapViewC = (MaplyViewController *)theViewC;
     
     // we want a black background for a globe, a white background for a map.
-    theViewC.clearColor = (globeViewC != nil) ? [UIColor grayColor] : [UIColor whiteColor];
+    theViewC.clearColor = (globeViewC != nil) ? [UIColor colorFromHexString:@"3498db"] : [UIColor whiteColor];
     [theViewC setZoomLimitsMin:10.0 max:10.0];
     
     // and thirty fps if we can get it ­ change this to 3 if you find your app is struggling
@@ -321,13 +320,7 @@
                         animations:NULL
                         completion:NULL];
         [quoteLabel2 setHidden:YES];
-        
-        [UIView transitionWithView:quoteLabel
-                          duration:0.4
-                           options:UIViewAnimationOptionTransitionCrossDissolve
-                        animations:NULL
-                        completion:NULL];
-        [quoteLabel setHidden:YES];
+
         
         [UIView transitionWithView:profileName
                           duration:0.4
@@ -364,6 +357,7 @@
 //    [self presentViewController:[UIViewController new] animated:YES completion:^{
 //        //
 //    }];
+    [PFUser logOut];
 }
 
 -(void)no{
@@ -378,13 +372,6 @@
                     animations:NULL
                     completion:NULL];
     [quoteLabel2 setHidden:NO];
-    
-    [UIView transitionWithView:quoteLabel
-                      duration:0.4
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:NULL
-                    completion:NULL];
-    [quoteLabel setHidden:NO];
     
     [UIView transitionWithView:profileName
                       duration:0.4
