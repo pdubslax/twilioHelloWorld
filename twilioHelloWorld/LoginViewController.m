@@ -136,7 +136,6 @@
                  forControlEvents:UIControlEventTouchUpInside];
     [self.stumpedLogin setTitle:@"" forState:UIControlStateNormal];
     [self.stumpedLogin setBackgroundImage:[UIImage imageNamed:@"stumped_login.png"] forState:UIControlStateNormal];
-    [self.stumpedLogin setBackgroundImage:[UIImage imageNamed:@"stumped_login_pressed.png"] forState:UIControlStateDisabled];
     self.stumpedLogin.frame = CGRectMake(self.view.frame.size.width/2 - 580/4, self.view.frame.size.height-150, 580/2, 124/2);
     [self.contentView addSubview:self.stumpedLogin];
     
