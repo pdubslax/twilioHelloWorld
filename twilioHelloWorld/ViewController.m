@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <WhirlyGlobeMaplyComponent/WhirlyGlobeComponent.h>
 #import "userObject.h"
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+#import "LoginViewController.h"
 
 @interface ViewController ()
 - (void) addCountries;
@@ -31,8 +33,28 @@
     
 }
 
+- (void)viewWillLayoutSubviews{
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        //TODO signed in YES eventually, we wont need this here
+        NSLog([currentUser objectForKey:@"displayName"]);
+        LoginViewController *vc = [LoginViewController new];
+        [self presentViewController:vc animated:NO completion:^{
+        }];
+    } else {
+        // show the signup or login screen
+        LoginViewController *vc = [LoginViewController new];
+        [self presentViewController:vc animated:NO completion:^{
+        }];
+        
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
     [self.view setBackgroundColor:[UIColor grayColor]];
     theViewC = [[WhirlyGlobeViewController alloc] init];
@@ -79,7 +101,7 @@
     
     profileName = [UILabel new];
     [profileName setText:@""];
-    [profileName setFrame:CGRectMake(120, 500, self.view.frame.size.width-120, 80)];
+    [profileName setFrame:CGRectMake(120, 500, self.view.frame.size.width-130, 80)];
     [profileName setTextAlignment:NSTextAlignmentCenter];
     [profileName setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:30]];
     [profileName setMinimumScaleFactor:.2f];
@@ -101,7 +123,7 @@
                   action:@selector(no)
         forControlEvents:UIControlEventTouchUpInside];
     [noButton setBackgroundImage:[UIImage imageNamed:@"xmark.png"] forState:UIControlStateNormal];
-    noButton.frame = CGRectMake(220, 587, 50, 50);
+    noButton.frame = CGRectMake(230, 587, 50, 50);
     [self.view addSubview:noButton];
     
     [profileName setHidden:YES];
@@ -198,11 +220,12 @@
         
                         MaplyScreenMarker *marker = [[MaplyScreenMarker alloc] init];
                         marker.image = icon;
-                        marker.loc =MaplyCoordinateMakeWithDegrees(-79.516667, 8.983333);
+                        marker.loc =MaplyCoordinateMakeWithDegrees(-80.662872,45.741802);
                         marker.size = CGSizeMake(366/16, 592/16);
                        userObject *test = [userObject new];
                        test.name = @"Patrick";
                        test.profilePicture = @"pic.png";
+                       test.country = @"Michigan - USA";
                        marker.userObject = test;
                        
                        [theViewC addScreenMarkers:[NSArray arrayWithObject:marker] desc:nil];
@@ -286,7 +309,7 @@
         [theViewC animateToPosition:newCenter time:.25];
         
         userObject *hey = (userObject*)[theVector userObject];
-        profileName.text = [NSString stringWithFormat:@"Video Chat with %@?",hey.name];
+        profileName.text = [NSString stringWithFormat:@"Video Chat with %@ from %@?",hey.name,hey.country];
         profilePic.image = [UIImage imageNamed:hey.profilePicture];
         
         
