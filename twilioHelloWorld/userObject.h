@@ -12,5 +12,6 @@
 
 @property (nonatomic,strong) NSString *profilePicture;
 @property (nonatomic,strong) NSString *name;
+@property (nonatomic,strong) NSString *country;
 
 @end
