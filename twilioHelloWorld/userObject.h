@@ -10,4 +10,7 @@
 
 @interface userObject : NSObject
 
+@property (nonatomic,strong) NSString *profilePicture;
+@property (nonatomic,strong) NSString *name;
+
 @end
